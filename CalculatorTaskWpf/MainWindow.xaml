@@ -1,0 +1,59 @@
+﻿<Window x:Class="CalculatorTaskWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalculatorTaskWpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="350" Icon="Image/calcicon.png">
+    
+    <Grid>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="137*"/>
+                <ColumnDefinition Width="205*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox Name="ResultTxtBox" FontSize="33"  HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Column="1" Margin="0,47" ></TextBox>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Click="EqualBtn_Click" Grid.Row="3" Grid.Column="0" Name="EqualBtn" Content="=" FontSize="35" Background="SkyBlue"></Button>
+            <Button Click="Btn0_Click" Grid.Row="3" Grid.Column="1" Name="Btn0" Content="0" FontSize="35" Background="White"></Button>
+            <Button Click="Btn0_Click" Grid.Row="2" Grid.Column="0" Name="Btn1" Content="1" FontSize="35" Background="White"></Button>
+            <Button Click="Btn0_Click" Grid.Row="2" Grid.Column="1" Name="Btn2" Content="2" FontSize="35" Background="White"></Button>
+            <Button Click="Btn0_Click" Grid.Row="2" Grid.Column="2" Name="Btn3" Content="3" FontSize="35" Background="White"></Button>
+            <Button Click="Btn0_Click" Grid.Row="1" Grid.Column="0" Name="Btn4" Content="4" FontSize="35" Background="White"></Button>
+            <Button Click="Btn0_Click" Grid.Row="1" Grid.Column="1" Name="Btn5" Content="5" FontSize="35" Background="White"></Button>
+            <Button Click="Btn0_Click" Grid.Row="1" Grid.Column="2" Name="Btn6" Content="6" FontSize="35" Background="White"></Button>
+            <Button Click="Btn0_Click" Grid.Row="0" Grid.Column="0" Name="Btn7" Content="7" FontSize="35" Background="White"></Button>
+            <Button Click="Btn0_Click" Grid.Row="0" Grid.Column="1" Name="Btn8" Content="8" FontSize="35" Background="White"></Button>
+            <Button Click="Btn0_Click" Grid.Row="0" Grid.Column="2" Name="Btn9" Content="9" FontSize="35" Background="White"></Button>
+            <Button Grid.Row="4" Grid.Column="0" Name="MinusPlusBtn" Content="+/-" FontSize="35" Background="Black" Foreground="White"></Button>
+            <Button Grid.Row="4" Grid.Column="1" Name="CEBtn" Content="CE" FontSize="35" Background="Black" Foreground="White"></Button>
+            <Button Click="CBtn_Click" Grid.Row="4" Grid.Column="2" Name="CBtn" Content="C" FontSize="35" Background="Black" Foreground="White"></Button>
+            <Button Click="DelBtn_Click" Grid.Row="4" Grid.Column="3" Name="DelBtn" Content="DEL" FontSize="35" Background="Black" Foreground="White"></Button>
+            <Button Click="Btn0_Click" Grid.Row="3" Grid.Column="2" Content="." FontSize="35" Background="Gray"></Button>
+            <Button Click="Op_Click" Grid.Row="3" Grid.Column="3" Content="+" FontSize="35" Background="Gray"></Button>
+            <Button Click="Op_Click" Grid.Row="2" Grid.Column="3" Content="-" FontSize="35" Background="Gray"></Button>
+            <Button Click="Op_Click" Grid.Row="1" Grid.Column="3" Content="/" FontSize="35" Background="Gray"></Button>
+            <Button Click="Op_Click" Grid.Row="0" Grid.Column="3" Content="*" FontSize="35" Background="Gray"></Button>
+        </Grid>
+    </Grid>
+</Window>
